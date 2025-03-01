@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital vs. Traditional Marketing Web Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Digital vs. Traditional Marketing Web Tool</h1>
+
+        <div class="input-section">
+            <h2>Enter Marketing Data</h2>
+            
+            <label>Reach (People):</label>
+            <input type="number" id="reachDigital" placeholder="Digital Marketing">
+            <input type="number" id="reachTraditional" placeholder="Traditional Marketing">
+            
+            <label>Cost (USD):</label>
+            <input type="number" id="costDigital" placeholder="Digital Marketing">
+            <input type="number" id="costTraditional" placeholder="Traditional Marketing">
+            
+            <label>Engagement Rate (%):</label>
+            <input type="number" id="engagementDigital" placeholder="Digital Marketing">
+            <input type="number" id="engagementTraditional" placeholder="Traditional Marketing">
+            
+            <label>Conversion Rate (%):</label>
+            <input type="number" id="conversionDigital" placeholder="Digital Marketing">
+            <input type="number" id="conversionTraditional" placeholder="Traditional Marketing">
+            
+            <label>ROI (%):</label>
+            <input type="number" id="roiDigital" placeholder="Digital Marketing">
+            <input type="number" id="roiTraditional" placeholder="Traditional Marketing">
+            
+            <button onclick="compareMarketing()">Compare 📈</button>
+        </div>
+
+        <!-- Chart Section (Initially Hidden) -->
+        <div class="chart-section" id="chartSection">
+            <h2>Comparison Charts</h2>
+            <canvas id="barChart"></canvas>
+            <canvas id="pieChart"></canvas>
+            <canvas id="lineChart"></canvas>
+            <canvas id="radarChart"></canvas>
+            <canvas id="stackedChart"></canvas>
+            <canvas id="scatterChart"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
